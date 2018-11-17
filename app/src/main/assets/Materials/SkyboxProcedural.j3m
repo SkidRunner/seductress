@@ -1,0 +1,6 @@
+Material My Material : MatDefs/SkyboxProcedural.j3md {
+     MaterialParameters {
+     }
+    AdditionalRenderState {
+    }
+}

@@ -1,0 +1,14 @@
+Material NavyGrid : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        DiffuseMap : Flip Repeat Textures/Prototyping/SwatchNavyAlbedo.png
+        GlowMap : Flip Repeat Textures/Prototyping/GridEmissive.png
+        UseMaterialColors : true
+        Diffuse : 1.0 1.0 1.0 1.0
+        Specular : 0.1568 0.1568 0.1568 1.0
+        GlowColor : 0.7491 0.7491 0.7491 1.0
+        Shininess : 0.0538
+     }
+    AdditionalRenderState {
+      AlphaTestFalloff 0.5
+    }
+}

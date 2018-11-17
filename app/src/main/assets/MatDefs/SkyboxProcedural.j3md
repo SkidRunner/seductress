@@ -1,0 +1,28 @@
+MaterialDef Skybox Procedural {
+    MaterialParameters {
+        Color SunColor : 1.0 1.0 1.0 1.0
+        Float SunStrength : 1.0
+        Color AtmosphereColor : 0.5, 0.5, 0.5, 1.0
+        Color GroundColor : 0.369, 0.349, 0.341, 1.0
+        Float Exposure : 1.3
+    }
+    
+    Technique {
+        VertexShader GLSL100:   Shaders/SkyboxProcedural.vert
+        FragmentShader GLSL100: Shaders/SkyboxProcedural.frag
+
+        WorldParameters {
+            ViewMatrix
+            ProjectionMatrix
+            WorldMatrixInverse
+        }
+        
+        Defines {
+        }
+
+        RenderState {
+            DepthWrite Off
+            DepthFunc Equal
+        }
+    }
+}

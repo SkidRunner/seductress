@@ -1,0 +1,8 @@
+Material TitleScreen Material : Common/MatDefs/Misc/UnshadedNodes.j3md {
+     MaterialParameters {
+        ColorMap : Flip Interface/TitleScreen.png
+     }
+    AdditionalRenderState {
+        Blend Alpha
+    }
+}

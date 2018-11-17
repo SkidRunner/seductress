@@ -1,0 +1,14 @@
+Material PrototypeBlueGrid : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        UseMaterialColors : true
+        Diffuse : 0.5 1.4 1.7 1.0
+        Specular : 0.5 0.5 0.5 1.0
+        Shininess : 1.0
+        Ambient : 0.0 0.0 0.0 1.0
+        GlowColor : 1.0 1.0 1.0 1.0
+        DiffuseMap : Flip Repeat Textures/Prototyping/PrototypeGrid.png
+        SpecularMap : Flip Repeat Textures/Prototyping/PrototypeGrid.png
+     }
+    AdditionalRenderState {
+    }
+}

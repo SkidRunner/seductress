@@ -1,0 +1,11 @@
+Material PrototypeGhecker : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        DiffuseMap : Flip Repeat Textures/Prototyping/PrototypeCheckerAlbedo.png
+        UseMaterialColors : true
+        Diffuse : 0.9558 0.9558 0.9558 1.0
+        Specular : 0.3529 0.3529 0.3529 1.0
+        Shininess : 0.0538
+     }
+    AdditionalRenderState {
+    }
+}
