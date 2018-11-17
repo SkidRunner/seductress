@@ -1,6 +1,7 @@
 package com.jme3.app;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
@@ -40,9 +41,9 @@ import java.util.logging.Logger;
  * @author Kirill
  * @author larynx
  */
-public class AndroidHarness extends Activity implements TouchListener, DialogInterface.OnClickListener, SystemListener {
+public class JMonkeyEngineActivity extends AppCompatActivity implements TouchListener, DialogInterface.OnClickListener, SystemListener {
 
-    protected final static Logger logger = Logger.getLogger(AndroidHarness.class.getName());
+    protected final static Logger logger = Logger.getLogger(JMonkeyEngineActivity.class.getName());
     /**
      * The application class to start
      */
@@ -166,8 +167,7 @@ public class AndroidHarness extends Activity implements TouchListener, DialogInt
      * splashPicID = 0, then no splash screen will be displayed.
      */
     protected int splashPicID = 0;
-
-
+	
     protected OGLESContext ctx;
     protected GLSurfaceView view = null;
     protected boolean isGLThreadPaused = true;
@@ -181,9 +181,9 @@ public class AndroidHarness extends Activity implements TouchListener, DialogInt
         protected LegacyApplication app = null;
     }
 
-    @Override
-    public Object onRetainNonConfigurationInstance() {
-        logger.log(Level.FINE, "onRetainNonConfigurationInstance");
+	@Override
+	public Object onRetainCustomNonConfigurationInstance() {
+		logger.log(Level.FINE, "onRetainNonConfigurationInstance");
         final DataObject data = new DataObject();
         data.app = this.app;
         inConfigChange = true;
@@ -349,8 +349,8 @@ public class AndroidHarness extends Activity implements TouchListener, DialogInt
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                AlertDialog dialog = new AlertDialog.Builder(AndroidHarness.this) // .setIcon(R.drawable.alert_dialog_icon)
-                        .setTitle(finalTitle).setPositiveButton("Kill", AndroidHarness.this).setMessage(finalMsg).create();
+                AlertDialog dialog = new AlertDialog.Builder(JMonkeyEngineActivity.this) // .setIcon(R.drawable.alert_dialog_icon)
+                        .setTitle(finalTitle).setPositiveButton("Kill", JMonkeyEngineActivity.this).setMessage(finalMsg).create();
                 dialog.show();
             }
         });
@@ -384,8 +384,8 @@ public class AndroidHarness extends Activity implements TouchListener, DialogInt
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            AlertDialog dialog = new AlertDialog.Builder(AndroidHarness.this) // .setIcon(R.drawable.alert_dialog_icon)
-                                    .setTitle(exitDialogTitle).setPositiveButton("Yes", AndroidHarness.this).setNegativeButton("No", AndroidHarness.this).setMessage(exitDialogMessage).create();
+                            AlertDialog dialog = new AlertDialog.Builder(JMonkeyEngineActivity.this) // .setIcon(R.drawable.alert_dialog_icon)
+                                    .setTitle(exitDialogTitle).setPositiveButton("Yes", JMonkeyEngineActivity.this).setNegativeButton("No", JMonkeyEngineActivity.this).setMessage(exitDialogMessage).create();
                             dialog.show();
                         }
                     });

@@ -1,14 +1,11 @@
 package me.skidrunner.mygame;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.jme3.app.JMonkeyEngineActivity;
 
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
+public class MainActivity extends JMonkeyEngineActivity {
+	
+	public MainActivity() {
+		appClass = MyGame.class.getName();
+	}
+	
 }
