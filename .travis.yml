@@ -27,6 +27,3 @@ android:
   - android-${ANDROID_API}
   - build-tools-${ANDROID_BUILD_TOOLS}
   - extra
-
-script:
-- "./gradlew clean test build"
