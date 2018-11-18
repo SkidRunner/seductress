@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/SkidRunner/mygame.svg?branch=master)](https://travis-ci.org/SkidRunner/MyGame) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![GitHub Stars](https://img.shields.io/github/stars/SkidRunner/MyGame.svg)](https://github.com/SkidRunner/MyGame/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/SkidRunner/MonkeyZone.svg)](https://github.com/SkidRunner/MonkeyZone/issues) [![Current Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/SkidRunner/MonkeyZone) [![Live Demo](https://img.shields.io/badge/demo-online-red.svg)]()
+[![Build Status](https://travis-ci.org/SkidRunner/mygame.svg?branch=master)](https://travis-ci.org/SkidRunner/mygame) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![GitHub Stars](https://img.shields.io/github/stars/SkidRunner/mygame.svg)](https://github.com/SkidRunner/mygame/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/SkidRunner/mygame.svg)](https://github.com/SkidRunner/mygame/issues) [![Current Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/SkidRunner/mygame)
 
 # [MyGame](https://skidrunner.github.io/mygame/)
 Android Game Project Using jMonkeyEngine3
