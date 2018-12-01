@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.lessvoid.com/nifty-gui">
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<!-- load styles -->
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<useStyles filename="nifty-default-styles.xml" />
+	<useControls filename="nifty-default-controls.xml" />
+
+	<screen id="screen_editor" controller="me.skidrunner.nifty.controller.EditorScreenController" >
+		<layer childLayout="vertical" width="100%" height="100%">
+			<panel childLayout="center">
+				<control name="label" text="Top" />
+			</panel>
+			<panel childLayout="horizontal">
+				<panel childLayout="center">
+					<control name="label" text="Left" />
+				</panel>
+				<panel childLayout="center">
+					<control name="label" text="Center" />
+				</panel>
+				<panel childLayout="center">
+					<control name="label" text="Right" />
+				</panel>
+			</panel>
+			<panel childLayout="center">
+				<control name="label" text="Bottom" />
+			</panel>
+		</layer>
+	</screen>
+	
+</nifty>

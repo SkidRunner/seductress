@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.lessvoid.com/nifty-gui">
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<!-- load styles -->
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<useStyles filename="nifty-default-styles.xml" />
+	<useControls filename="nifty-default-controls.xml" />
+
+	<screen id="screenSettings">
+		<layer id="layer0" childLayout="vertical" width="100%" height="100%">
+		</layer>
+		<layer id="layer1" childLayout="vertical" width="100%" height="100%">
+			<panel id="panel0" childLayout="center" width="*" height="*">
+				<control id="labelTitle" name="label" text="My Game" />
+			</panel>
+			<panel id="panel1" childLayout="center" width="*" height="*">
+				<panel id="panel2" childLayout="vertical">
+					<control id="buttonContinue" name="button" label="CONTINUE" />
+					<panel id="panel3" width="0px" height="8px" />
+					<control id="buttonSettings" name="button" label="SETTINGS" />
+				</panel>
+			</panel>
+			<panel id="panel4" childLayout="horizontal">
+				<control id="labelVersion" name="label" text="Version 1.0" />
+				<panel id="panel5" width="*" height="0px" />
+				<control id="label0" name="label" text="Copyright &#169; 2018 SkidRunner" />
+			</panel>
+		</layer>
+	</screen>
+	
+	
+</nifty>

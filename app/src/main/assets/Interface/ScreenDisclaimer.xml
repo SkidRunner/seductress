@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.lessvoid.com/nifty-gui">
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<!-- load styles -->
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<useStyles filename="nifty-default-styles.xml" />
+	<useControls filename="nifty-default-controls.xml" />
+
+	<resourceBundle id="disclaimer" filename="disclaimer" />
+	
+	<screen id="Disclaimer" controller="me.skidrunner.mygame.MainScreen" >
+		<layer id="layer0" childLayout="vertical" width="100%" height="100%">
+			<text style="nifty-label" text="${disclaimer.title}" />
+			<text style="nifty-label" />
+		</layer>
+	</screen>
+	
+</nifty>
